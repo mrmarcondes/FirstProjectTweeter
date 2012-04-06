@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1A0BD0152FB11A007946AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BCF152FB11A007946AC /* UIKit.framework */; };
+		2B1A0BD2152FB11A007946AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BD1152FB11A007946AC /* Foundation.framework */; };
+		2B1A0BD4152FB11A007946AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BD3152FB11A007946AC /* CoreGraphics.framework */; };
+		2B1A0BDA152FB11A007946AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A0BD8152FB11A007946AC /* InfoPlist.strings */; };
+		2B1A0BDC152FB11A007946AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BDB152FB11A007946AC /* main.m */; };
+		2B1A0BE0152FB11A007946AC /* MGNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */; };
+		2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */; };
+		2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE5152FB11A007946AC /* MGNViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B1A0BCB152FB11A007946AC /* FirstProjectTweeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProjectTweeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1A0BCF152FB11A007946AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B1A0BD1152FB11A007946AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B1A0BD3152FB11A007946AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B1A0BD7152FB11A007946AC /* FirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; path = "FirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
+		2B1A0BD9152FB11A007946AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B1A0BDB152FB11A007946AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B1A0BDD152FB11A007946AC /* FirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; path = "FirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
+		2B1A0BDE152FB11A007946AC /* MGNAppDelegate.h */ = {isa = PBXFileReference; path = MGNAppDelegate.h; sourceTree = "<group>"; };
+		2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNAppDelegate.m; sourceTree = "<group>"; };
+		2B1A0BE2152FB11A007946AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2B1A0BE4152FB11A007946AC /* MGNViewController.h */ = {isa = PBXFileReference; path = MGNViewController.h; sourceTree = "<group>"; };
+		2B1A0BE5152FB11A007946AC /* MGNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B1A0BC8152FB11A007946AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1A0BD0152FB11A007946AC /* UIKit.framework in Frameworks */,
+				2B1A0BD2152FB11A007946AC /* Foundation.framework in Frameworks */,
+				2B1A0BD4152FB11A007946AC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B1A0BC0152FB11A007946AC = {
+			isa = PBXGroup;
+			children = (
+				2B1A0BD5152FB11A007946AC /* FirstProjectTweeter */,
+				2B1A0BCE152FB11A007946AC /* Frameworks */,
+				2B1A0BCC152FB11A007946AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B1A0BCC152FB11A007946AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A0BCB152FB11A007946AC /* FirstProjectTweeter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1A0BCE152FB11A007946AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A0BCF152FB11A007946AC /* UIKit.framework */,
+				2B1A0BD1152FB11A007946AC /* Foundation.framework */,
+				2B1A0BD3152FB11A007946AC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B1A0BD5152FB11A007946AC /* FirstProjectTweeter */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A0BDE152FB11A007946AC /* MGNAppDelegate.h */,
+				2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */,
+				2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */,
+				2B1A0BE4152FB11A007946AC /* MGNViewController.h */,
+				2B1A0BE5152FB11A007946AC /* MGNViewController.m */,
+				2B1A0BD6152FB11A007946AC /* Supporting Files */,
+			);
+			path = FirstProjectTweeter;
+			sourceTree = "<group>";
+		};
+		2B1A0BD6152FB11A007946AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A0BD7152FB11A007946AC /* FirstProjectTweeter-Info.plist */,
+				2B1A0BD8152FB11A007946AC /* InfoPlist.strings */,
+				2B1A0BDB152FB11A007946AC /* main.m */,
+				2B1A0BDD152FB11A007946AC /* FirstProjectTweeter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B1A0BCA152FB11A007946AC /* FirstProjectTweeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1A0BE9152FB11A007946AC /* Build configuration list for PBXNativeTarget "FirstProjectTweeter" */;
+			buildPhases = (
+				2B1A0BC7152FB11A007946AC /* Sources */,
+				2B1A0BC8152FB11A007946AC /* Frameworks */,
+				2B1A0BC9152FB11A007946AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstProjectTweeter;
+			productName = FirstProjectTweeter;
+			productReference = 2B1A0BCB152FB11A007946AC /* FirstProjectTweeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B1A0BC2152FB11A007946AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2B1A0BC5152FB11A007946AC /* Build configuration list for PBXProject "FirstProjectTweeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B1A0BC0152FB11A007946AC;
+			productRefGroup = 2B1A0BCC152FB11A007946AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B1A0BCA152FB11A007946AC /* FirstProjectTweeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B1A0BC9152FB11A007946AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1A0BDA152FB11A007946AC /* InfoPlist.strings in Resources */,
+				2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B1A0BC7152FB11A007946AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1A0BDC152FB11A007946AC /* main.m in Sources */,
+				2B1A0BE0152FB11A007946AC /* MGNAppDelegate.m in Sources */,
+				2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B1A0BD8152FB11A007946AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1A0BD9152FB11A007946AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1A0BE2152FB11A007946AC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B1A0BE7152FB11A007946AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B1A0BE8152FB11A007946AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B1A0BEA152FB11A007946AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstProjectTweeter/FirstProjectTweeter-Prefix.pch";
+				INFOPLIST_FILE = "FirstProjectTweeter/FirstProjectTweeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B1A0BEB152FB11A007946AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirstProjectTweeter/FirstProjectTweeter-Prefix.pch";
+				INFOPLIST_FILE = "FirstProjectTweeter/FirstProjectTweeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B1A0BC5152FB11A007946AC /* Build configuration list for PBXProject "FirstProjectTweeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1A0BE7152FB11A007946AC /* Debug */,
+				2B1A0BE8152FB11A007946AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1A0BE9152FB11A007946AC /* Build configuration list for PBXNativeTarget "FirstProjectTweeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1A0BEA152FB11A007946AC /* Debug */,
+				2B1A0BEB152FB11A007946AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B1A0BC2152FB11A007946AC /* Project object */;
+}
