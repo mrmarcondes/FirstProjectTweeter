@@ -7,54 +7,43 @@
 //
 
 #import "MGNViewController.h"
+#import <Twitter/Twitter.h>
+
+@interface MGNViewController()
+  -(void) reloadTweets;
+@end
 
 @implementation MGNViewController
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+@synthesize twitterWebView = _twitterWebView;
+
+-(IBAction)handleTweetButtonTapped:(id)sender {
+  if (TWTweetComposeViewController.canSendTweet){
+    TWTweetComposeViewController *tweetVC = 
+      [TWTweetComposeViewController.alloc init];
+    [tweetVC setInitialText: @"Primeiro projeto usando iOS SDK"];
+    tweetVC.completionHandler = ^(TWTweetComposeViewControllerResult result)
+    {
+      if (result == TWTweetComposeViewControllerResultDone) {
+        [self dismissModalViewControllerAnimated:YES];
+        [self reloadTweets];
+      }
+    };
+    [self presentViewController:tweetVC animated:YES completion:NULL];
+  } else {
+    NSLog(@"Não é possível enviar tweet");    
+  }  
 }
 
-#pragma mark - View lifecycle
+-(IBAction) handleShowMyTweetsTapped: (id) sender {
+  [self reloadTweets];
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+-(void) reloadTweets {
+  [self.twitterWebView loadRequest:
+   [NSURLRequest requestWithURL:
+    [NSURL URLWithString:@"http://twitter.com/mrmarcondes"]]];
 }
 
 @end

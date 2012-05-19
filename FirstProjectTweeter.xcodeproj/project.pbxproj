@@ -15,6 +15,7 @@
 		2B1A0BE0152FB11A007946AC /* MGNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */; };
 		2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */; };
 		2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE5152FB11A007946AC /* MGNViewController.m */; };
+		2B1A0BED152FD378007946AC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BEC152FD378007946AC /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		2B1A0BCF152FB11A007946AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2B1A0BD1152FB11A007946AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B1A0BD3152FB11A007946AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2B1A0BD7152FB11A007946AC /* FirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; path = "FirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
+		2B1A0BD7152FB11A007946AC /* FirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
 		2B1A0BD9152FB11A007946AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B1A0BDB152FB11A007946AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B1A0BDD152FB11A007946AC /* FirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; path = "FirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
-		2B1A0BDE152FB11A007946AC /* MGNAppDelegate.h */ = {isa = PBXFileReference; path = MGNAppDelegate.h; sourceTree = "<group>"; };
+		2B1A0BDD152FB11A007946AC /* FirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
+		2B1A0BDE152FB11A007946AC /* MGNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGNAppDelegate.h; sourceTree = "<group>"; };
 		2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNAppDelegate.m; sourceTree = "<group>"; };
 		2B1A0BE2152FB11A007946AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2B1A0BE4152FB11A007946AC /* MGNViewController.h */ = {isa = PBXFileReference; path = MGNViewController.h; sourceTree = "<group>"; };
+		2B1A0BE4152FB11A007946AC /* MGNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGNViewController.h; sourceTree = "<group>"; };
 		2B1A0BE5152FB11A007946AC /* MGNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNViewController.m; sourceTree = "<group>"; };
+		2B1A0BEC152FD378007946AC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1A0BED152FD378007946AC /* Twitter.framework in Frameworks */,
 				2B1A0BD0152FB11A007946AC /* UIKit.framework in Frameworks */,
 				2B1A0BD2152FB11A007946AC /* Foundation.framework in Frameworks */,
 				2B1A0BD4152FB11A007946AC /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +70,7 @@
 		2B1A0BCE152FB11A007946AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B1A0BEC152FD378007946AC /* Twitter.framework */,
 				2B1A0BCF152FB11A007946AC /* UIKit.framework */,
 				2B1A0BD1152FB11A007946AC /* Foundation.framework */,
 				2B1A0BD3152FB11A007946AC /* CoreGraphics.framework */,
@@ -124,7 +128,7 @@
 		2B1A0BC2152FB11A007946AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 2B1A0BC5152FB11A007946AC /* Build configuration list for PBXProject "FirstProjectTweeter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -274,6 +278,7 @@
 				2B1A0BEB152FB11A007946AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
