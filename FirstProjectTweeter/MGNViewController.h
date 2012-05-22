@@ -10,6 +10,6 @@
 
 @interface MGNViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UIWebView *twitterWebView;
+@property (nonatomic, strong) IBOutlet UITextView *twitterTextView;
 
 @end
