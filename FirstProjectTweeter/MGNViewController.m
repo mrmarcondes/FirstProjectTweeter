@@ -23,27 +23,25 @@
 @synthesize twitterTextView = twitterTextView;
 
 -(IBAction)handleTweetButtonTapped:(id)sender {
-  if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeTwitter]){
-    SLComposeViewController *tweetVC =
-    [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeTwitter];
-    [tweetVC setInitialText: @"Primeiro tweet no ios6"];
-    [self presentViewController: tweetVC animated:YES completion:NULL];
-  } else {
-    NSLog(@"Não pode mandar tweet");
-  }
+  [self sendMessage:SLServiceTypeTwitter];
 }
 
 
 -(IBAction)handleFacebookButtonTapped:(id)sender {
-  if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]){
+  [self sendMessage:SLServiceTypeFacebook];
+}
+
+-(void)sendMessage:(NSString *)serviceType{
+  if ([SLComposeViewController isAvailableForServiceType: serviceType]){
     SLComposeViewController *tweetVC =
-    [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
+    [SLComposeViewController composeViewControllerForServiceType: serviceType];
     [tweetVC setInitialText: @"Primeira mensagem no io6"];
     [self presentViewController: tweetVC animated:YES completion:NULL];
   } else {
-    NSLog(@"Não pode mandar tweet");
+    NSLog(@"Não pode mandar mensagem");
   }
 }
+
 
 -(IBAction) handleShowMyTweetsTapped: (id) sender {
   [self reloadTweets];
