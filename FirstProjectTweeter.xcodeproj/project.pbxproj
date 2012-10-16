@@ -15,7 +15,8 @@
 		2B1A0BE0152FB11A007946AC /* MGNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BDF152FB11A007946AC /* MGNAppDelegate.m */; };
 		2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */; };
 		2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE5152FB11A007946AC /* MGNViewController.m */; };
-		2B1A0BED152FD378007946AC /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BEC152FD378007946AC /* Twitter.framework */; };
+		2B8F2C02162DCF3E00D9232A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8F2C01162DCF3E00D9232A /* Social.framework */; };
+		2B8F2C03162DD1EA00D9232A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BEC152FD378007946AC /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2B1A0BE4152FB11A007946AC /* MGNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGNViewController.h; sourceTree = "<group>"; };
 		2B1A0BE5152FB11A007946AC /* MGNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNViewController.m; sourceTree = "<group>"; };
 		2B1A0BEC152FD378007946AC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		2B8F2C01162DCF3E00D9232A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1A0BED152FD378007946AC /* Twitter.framework in Frameworks */,
+				2B8F2C03162DD1EA00D9232A /* Twitter.framework in Frameworks */,
+				2B8F2C02162DCF3E00D9232A /* Social.framework in Frameworks */,
 				2B1A0BD0152FB11A007946AC /* UIKit.framework in Frameworks */,
 				2B1A0BD2152FB11A007946AC /* Foundation.framework in Frameworks */,
 				2B1A0BD4152FB11A007946AC /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +56,7 @@
 		2B1A0BC0152FB11A007946AC = {
 			isa = PBXGroup;
 			children = (
+				2B8F2C01162DCF3E00D9232A /* Social.framework */,
 				2B1A0BD5152FB11A007946AC /* FirstProjectTweeter */,
 				2B1A0BCE152FB11A007946AC /* Frameworks */,
 				2B1A0BCC152FB11A007946AC /* Products */,
@@ -128,7 +132,7 @@
 		2B1A0BC2152FB11A007946AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 2B1A0BC5152FB11A007946AC /* Build configuration list for PBXProject "FirstProjectTweeter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -212,7 +216,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -230,7 +234,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

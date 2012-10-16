@@ -7,6 +7,7 @@
 //
 
 #import "MGNViewController.h"
+#import <Social/Social.h>
 #import <Twitter/Twitter.h>
 
 @interface MGNViewController()
@@ -22,21 +23,26 @@
 @synthesize twitterTextView = twitterTextView;
 
 -(IBAction)handleTweetButtonTapped:(id)sender {
-  if (TWTweetComposeViewController.canSendTweet){
-    TWTweetComposeViewController *tweetVC = 
-      [TWTweetComposeViewController.alloc init];
-    [tweetVC setInitialText: @"Primeiro projeto usando iOS SDK"];
-    tweetVC.completionHandler = ^(TWTweetComposeViewControllerResult result)
-    {
-      if (result == TWTweetComposeViewControllerResultDone) {
-        [self dismissModalViewControllerAnimated:YES];
-        [self reloadTweets];
-      }
-    };
-    [self presentViewController:tweetVC animated:YES completion:NULL];
+  if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeTwitter]){
+    SLComposeViewController *tweetVC =
+    [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeTwitter];
+    [tweetVC setInitialText: @"Primeiro tweet no ios6"];
+    [self presentViewController: tweetVC animated:YES completion:NULL];
   } else {
-    NSLog(@"Não é possível enviar tweet");    
-  }  
+    NSLog(@"Não pode mandar tweet");
+  }
+}
+
+
+-(IBAction)handleFacebookButtonTapped:(id)sender {
+  if ([SLComposeViewController isAvailableForServiceType: SLServiceTypeFacebook]){
+    SLComposeViewController *tweetVC =
+    [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeFacebook];
+    [tweetVC setInitialText: @"Primeira mensagem no io6"];
+    [self presentViewController: tweetVC animated:YES completion:NULL];
+  } else {
+    NSLog(@"Não pode mandar tweet");
+  }
 }
 
 -(IBAction) handleShowMyTweetsTapped: (id) sender {
