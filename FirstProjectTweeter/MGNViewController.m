@@ -20,8 +20,6 @@
 
 @implementation MGNViewController
 
-@synthesize twitterTextView = twitterTextView;
-
 -(IBAction)handleTweetButtonTapped:(id)sender {
   [self sendMessage:SLServiceTypeTwitter];
 }
@@ -35,7 +33,8 @@
   if ([SLComposeViewController isAvailableForServiceType: serviceType]){
     SLComposeViewController *tweetVC =
     [SLComposeViewController composeViewControllerForServiceType: serviceType];
-    [tweetVC setInitialText: @"Primeira mensagem no io6"];
+    NSLog(@"%@", tweetVC.class);
+    [tweetVC setInitialText: NSLocalizedString(@"Primeira mensagem no io6", nil)];
     [self presentViewController: tweetVC animated:YES completion:NULL];
   } else {
     NSLog(@"Não pode mandar mensagem");
@@ -62,7 +61,7 @@
                                         NSError *error) {
     [self handleTwitterData:responseData
                 urlResponse:urlResponse
-                      error:error];    
+                      error:error];
   }];
 }
 

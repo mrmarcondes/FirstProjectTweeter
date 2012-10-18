@@ -15,11 +15,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eye-M6-tTf">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="taK-xA-U5B"/>
+                                    <constraint firstAttribute="height" constant="39" type="user" id="5n2-r6-uD8"/>
                                     <constraint firstAttribute="width" constant="220" id="yT5-ok-v1X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sending twitter">
+                                <state key="normal" title="Enviando twitter">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -31,11 +31,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOr-57-AEq">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="21b-vu-8JZ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sending facebook">
+                                <state key="normal" title="Enviando facebook">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,8 +44,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-EE-9CU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="OuB-DM-Y3L"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Show my tweets">
+                                <state key="normal" title="Mostrar meus tweets">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -71,10 +71,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WoN-4e-Bsn" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="0cO-uo-7aN"/>
                             <constraint firstItem="eye-M6-tTf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" type="user" id="2Om-Cg-b3S"/>
                             <constraint firstItem="WoN-4e-Bsn" firstAttribute="centerX" secondItem="bBN-EE-9CU" secondAttribute="centerX" type="default" id="4zv-js-C1D"/>
-                            <constraint firstItem="uOr-57-AEq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="5DP-Cu-BFa"/>
                             <constraint firstAttribute="bottom" secondItem="WoN-4e-Bsn" secondAttribute="bottom" constant="29" type="user" id="9Q9-Aj-KiN"/>
+                            <constraint firstItem="uOr-57-AEq" firstAttribute="top" secondItem="3" secondAttribute="top" constant="79" type="user" id="BcW-UF-VgL"/>
                             <constraint firstItem="bBN-EE-9CU" firstAttribute="top" secondItem="uOr-57-AEq" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="IPe-kR-ZNB"/>
                             <constraint firstItem="WoN-4e-Bsn" firstAttribute="top" secondItem="bBN-EE-9CU" secondAttribute="bottom" constant="17" type="user" id="LWG-5M-0dh"/>
                             <constraint firstItem="eye-M6-tTf" firstAttribute="trailing" secondItem="uOr-57-AEq" secondAttribute="trailing" type="default" id="X1d-Id-6LQ"/>
@@ -94,6 +95,20 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="MGNViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MGNViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handleFacebookButtonTapped:"/>
+                <relationship kind="action" name="handleShowMyTweetsTapped:"/>
+                <relationship kind="action" name="handleTweetButtonTapped:"/>
+                <relationship kind="outlet" name="twitterTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

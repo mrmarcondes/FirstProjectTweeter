@@ -17,6 +17,8 @@
 		2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE5152FB11A007946AC /* MGNViewController.m */; };
 		2B8F2C02162DCF3E00D9232A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8F2C01162DCF3E00D9232A /* Social.framework */; };
 		2B8F2C03162DD1EA00D9232A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BEC152FD378007946AC /* Twitter.framework */; };
+		2BAD76CE16305C9700025975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD76CD16305C9700025975 /* Default-568h@2x.png */; };
+		2BAD76D416307BB600025975 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD76D616307BB600025975 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,11 @@
 		2B1A0BE5152FB11A007946AC /* MGNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNViewController.m; sourceTree = "<group>"; };
 		2B1A0BEC152FD378007946AC /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		2B8F2C01162DCF3E00D9232A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2BAD76CD16305C9700025975 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2BAD76D01630751D00025975 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2BAD76D11630751D00025975 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BAD76D516307BB600025975 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BAD76D716307BB800025975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 		2B1A0BC0152FB11A007946AC = {
 			isa = PBXGroup;
 			children = (
+				2BAD76CD16305C9700025975 /* Default-568h@2x.png */,
 				2B8F2C01162DCF3E00D9232A /* Social.framework */,
 				2B1A0BD5152FB11A007946AC /* FirstProjectTweeter */,
 				2B1A0BCE152FB11A007946AC /* Frameworks */,
@@ -90,6 +98,7 @@
 				2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */,
 				2B1A0BE4152FB11A007946AC /* MGNViewController.h */,
 				2B1A0BE5152FB11A007946AC /* MGNViewController.m */,
+				2BAD76D616307BB600025975 /* Localizable.strings */,
 				2B1A0BD6152FB11A007946AC /* Supporting Files */,
 			);
 			path = FirstProjectTweeter;
@@ -140,6 +149,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt,
 			);
 			mainGroup = 2B1A0BC0152FB11A007946AC;
 			productRefGroup = 2B1A0BCC152FB11A007946AC /* Products */;
@@ -158,6 +168,8 @@
 			files = (
 				2B1A0BDA152FB11A007946AC /* InfoPlist.strings in Resources */,
 				2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */,
+				2BAD76CE16305C9700025975 /* Default-568h@2x.png in Resources */,
+				2BAD76D416307BB600025975 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +193,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2B1A0BD9152FB11A007946AC /* en */,
+				2BAD76D11630751D00025975 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -189,8 +202,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2B1A0BE2152FB11A007946AC /* en */,
+				2BAD76D01630751D00025975 /* pt */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		2BAD76D616307BB600025975 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BAD76D516307BB600025975 /* pt */,
+				2BAD76D716307BB800025975 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
