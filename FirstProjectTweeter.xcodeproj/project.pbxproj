@@ -16,7 +16,6 @@
 		2B1A0BE3152FB11A007946AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE1152FB11A007946AC /* MainStoryboard.storyboard */; };
 		2B1A0BE6152FB11A007946AC /* MGNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A0BE5152FB11A007946AC /* MGNViewController.m */; };
 		2B8F2C02162DCF3E00D9232A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8F2C01162DCF3E00D9232A /* Social.framework */; };
-		2B8F2C03162DD1EA00D9232A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1A0BEC152FD378007946AC /* Twitter.framework */; };
 		2BAD76CE16305C9700025975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD76CD16305C9700025975 /* Default-568h@2x.png */; };
 		2BAD76D416307BB600025975 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD76D616307BB600025975 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8F2C03162DD1EA00D9232A /* Twitter.framework in Frameworks */,
 				2B8F2C02162DCF3E00D9232A /* Social.framework in Frameworks */,
 				2B1A0BD0152FB11A007946AC /* UIKit.framework in Frameworks */,
 				2B1A0BD2152FB11A007946AC /* Foundation.framework in Frameworks */,

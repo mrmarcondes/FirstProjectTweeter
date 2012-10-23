@@ -10,6 +10,4 @@
 
 @interface MGNViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UITextView *twitterTextView;
-
 @end
