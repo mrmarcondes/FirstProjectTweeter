@@ -8,10 +8,14 @@
 
 #import "MGNViewController.h"
 #import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
 
 @interface MGNViewController()
 @property (nonatomic, strong) IBOutlet UITextView *twitterTextView;
+@property (strong) ACAccountStore *accountStore;
+@property (readonly, strong) ACAccount *twitterAccount;
+
 -(void) reloadTweets;
 
 -(void) handleTwitterData: (NSData*) data
@@ -20,6 +24,21 @@
 @end
 
 @implementation MGNViewController
+
+@synthesize twitterAccount = _twitterAccount;
+
+-(ACAccount*) twitterAccount {
+  if (!_twitterAccount) {
+    self.accountStore = [[ACAccountStore alloc] init];
+    ACAccountType *twitterAccountType = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    NSArray *twitterAccounts = [self.accountStore accountsWithAccountType: twitterAccountType];
+    if ([twitterAccounts count] > 0) {
+      _twitterAccount = [twitterAccounts objectAtIndex:0];
+    }
+  }
+  return _twitterAccount;
+  
+}
 
 -(IBAction)handleTweetButtonTapped:(id)sender {
   [self sendMessage:SLServiceTypeTwitter];
@@ -57,15 +76,15 @@
 
 -(void) reloadTweets {
   NSURL *twitterAPIURL = [NSURL URLWithString:
-                          @"http://api.twitter.com/1/statuses/user_timeline.json"];
+                          @"http://api.twitter.com/1/statuses/home_timeline.json"];
   
-  NSDictionary *twitterParams = @{@"screen_name" : @"mrmarcondes"};
+  NSDictionary *twitterParams = @{};
   SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                           requestMethod:SLRequestMethodGET
                                                     URL:twitterAPIURL
                                              parameters:twitterParams];
   
-
+  request.account = self.twitterAccount;
   [request performRequestWithHandler: ^(NSData *responseData, 
                                         NSHTTPURLResponse *urlResponse, 
                                         NSError *error) {
@@ -83,7 +102,7 @@
                                                                       options:0
                                                                         error:&jsonError];
   
-  if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
+  if ([jsonResponse isKindOfClass:[NSArray class]]) {
     dispatch_async(dispatch_get_main_queue(), ^ {
       NSArray *tweets = (NSArray*) jsonResponse;
       for (NSDictionary *tweetDict in tweets) {
